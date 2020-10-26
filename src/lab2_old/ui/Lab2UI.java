@@ -2,7 +2,7 @@
  * variant 7
  * */
 
-package lab2.ui;
+package lab2_old.ui;
 
 import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
@@ -32,11 +32,11 @@ public class Lab2UI extends Application {
         //TableView_Table.getItems().clear();
         tv_Table.getColumns().clear();
 
-        String elementId = ((MenuItem)e.getSource()).getId();
+        String id = ((MenuItem)e.getSource()).getId();
         String tableName = "";
-        if (elementId.equals("MenuItem_Categories_View"))
+        if (id.equals("MenuItem_Categories_View"))
             tableName="Category";
-        else if (elementId.equals("MenuItem_Products_View"))
+        else if (id.equals("MenuItem_Products_View"))
             tableName="Product";
 
         String[] columnNames = sql.getColumnNames(tableName);

@@ -1,7 +1,7 @@
 import lab1.Lab1;
 import lab1.Lab1UI;
-import lab2.Lab2;
-import lab2.ui.Lab2UI;
+import lab2_old.Lab2;
+import lab2_old.ui.Lab2UI;
 
 import static java.lang.System.out;
 import java.util.Scanner;

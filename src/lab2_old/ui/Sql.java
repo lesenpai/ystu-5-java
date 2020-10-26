@@ -1,4 +1,4 @@
-package lab2.ui;
+package lab2_old.ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

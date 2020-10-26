@@ -1,4 +1,4 @@
-package lab2;
+package lab2_old;
 
 import java.sql.*;
 import static java.lang.System.*;

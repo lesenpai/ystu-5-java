@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane fx:id="APane" prefHeight="460.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab2.ui.Lab2UI">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab2_old.ui.Lab2UI">
   <children>
     <MenuBar layoutY="8.0" prefHeight="32.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
              AnchorPane.topAnchor="0.0">
@@ -22,8 +22,8 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Products">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#menuItem_TABLE_View_Click" text="View"/>
-            <MenuItem mnemonicParsing="false" text="Add"/>
+            <MenuItem fx:id="MenuItem_Products_View" mnemonicParsing="false" onAction="#menuItem_TABLE_View_Click" text="View"/>
+            <MenuItem fx:id="MenuItem_Products_Add" mnemonicParsing="false" text="Add"/>
           </items>
         </Menu>
       </menus>
