@@ -14,8 +14,8 @@ public class Test {
             int columnCount = rs.getMetaData().getColumnCount();
 
             while (rs.next()) {
-                for (int i=1; i<columnCount; i++) {
-                    out.print(rs.getString(i)+"\t");
+                for (int i=1; i<=columnCount; i++) {
+                    out.print(rs.getString(i)+" ");
                 }
                 out.println();
             }

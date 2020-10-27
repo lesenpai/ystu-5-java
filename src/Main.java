@@ -1,5 +1,4 @@
-import lab1.Lab1;
-import lab1.Lab1UI;
+import lab1.*;
 import lab2_old.Lab2;
 import lab2_old.ui.Lab2UI;
 
