@@ -18,18 +18,6 @@ CREATE TABLE Player (
     PlayerSurname varchar(30) NOT NULL,
     PlayerPatronymic varchar(30) NOT NULL,
     TeamID int,
-
-
-
-
-
-
-
-
-
-
-
-
     PRIMARY KEY (ID),
     FOREIGN KEY (TeamID) REFERENCES Team(ID)
 );

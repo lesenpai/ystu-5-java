@@ -25,7 +25,7 @@ public class Lab1UI {
 
 	public Lab1UI() {
 		btn_P1_Start.addActionListener(e -> {
-			ta_P1.setText(Lab1.part1());
+			ta_P1.setText(Lab1.prog1());
 		});
 
 		btn_P1_Clear.addActionListener(e -> {
@@ -33,7 +33,7 @@ public class Lab1UI {
 		});
 
 		btn_P2_Start.addActionListener(e -> {
-			ta_P2.setText(Lab1.part2());
+			ta_P2.setText(Lab1.prog2());
 		});
 
 		btn_P2_Clear.addActionListener(e -> {
@@ -62,7 +62,7 @@ public class Lab1UI {
 		pnl_Main.add(tabbedPane, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(400, 300), null, 0, false));
 		final JPanel panel1 = new JPanel();
 		panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
-		tabbedPane.addTab("Part 1", panel1);
+		tabbedPane.addTab("Prog 1", panel1);
 		btn_P1_Start = new JButton();
 		btn_P1_Start.setText("Start");
 		panel1.add(btn_P1_Start, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, new Dimension(40, -1), null, null, 0, false));
@@ -76,7 +76,7 @@ public class Lab1UI {
 		panel1.add(ta_P1, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 2, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
 		final JPanel panel2 = new JPanel();
 		panel2.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
-		tabbedPane.addTab("Part 2", panel2);
+		tabbedPane.addTab("Prog 2", panel2);
 		ta_P2 = new JTextArea();
 		ta_P2.setEditable(false);
 		Font ta_P2Font = this.$$$getFont$$$("Consolas", -1, 16, ta_P2.getFont());

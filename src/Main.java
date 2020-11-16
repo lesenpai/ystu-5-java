@@ -15,7 +15,7 @@ public class Main {
             out.println("type lab number:");
             var input = in.nextLine();
             switch (input) {
-                case "1":
+                case "1" -> {
                     out.println("type part (1=cmd, 2=ui):");
                     input = in.nextLine();
                     switch (input) {
@@ -29,25 +29,17 @@ public class Main {
                             out.println("bad input");
                         }
                     }
-                    break;
-                case "2":
+                }
+                case "2" -> {
                     out.println("type part (1=cmd, 2=ui):");
-                    input=in.nextLine();
+                    input = in.nextLine();
                     switch (input) {
-                        case "1":
-                            Lab2.main(null);
-                            break;
-                        case "2":
-                            Lab2UI.main(null);
-                            break;
-                        default:
-                            out.println("bad input");
-                            break;
+                        case "1" -> Lab2.main(null);
+                        case "2" -> Lab2UI.main(null);
+                        default -> out.println("bad input");
                     }
-                    break;
-                default:
-                    out.println("no lab");
-                    break;
+                }
+                default -> out.println("no lab");
             }
         }
     }

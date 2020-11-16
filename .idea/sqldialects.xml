@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/lab2/p1/init_db.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/lab2/sql/derby_init_insert.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/src/lab2/sql/mysql_init.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/lab2/sql/sqlserver_init.sql" dialect="TSQL" />
   </component>
 </project>

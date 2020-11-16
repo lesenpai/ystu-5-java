@@ -9,7 +9,6 @@ public class Sql {
     private Statement statement;
 
     public Sql() throws Exception {
-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         String db = "products", user = "le", password = "ledb",
                 url = String.format("jdbc:sqlserver://localhost;database=%s;user=%s;password=%s",db,user,password);
 
