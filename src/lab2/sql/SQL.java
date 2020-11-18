@@ -1,7 +1,6 @@
 package lab2.sql;
 
 import lab2.p1.DBType;
-
 import javax.swing.table.DefaultTableModel;
 import java.sql.*;
 import java.io.IOException;
@@ -10,7 +9,6 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Vector;
-
 import static java.lang.System.out;
 
 public class SQL {
@@ -49,8 +47,7 @@ public class SQL {
 			.filter(s -> !s.startsWith(finalSqlCommentSign)) // remove commented lines
 			.toArray(String[]::new))
 			.reduce("", String::concat)
-			//.split(";(?!$)"); // split into queries
-			.split((dbType==DBType.Derby)?";":";(?!$)"); // derby's 'execute' dont like ';' at end
+			.split((dbType == DBType.Derby) ? ";" : ";(?!$)"); // derby's 'execute' dont like ';' at end
 		for (var q : script) {
 			execute(q);
 		}
