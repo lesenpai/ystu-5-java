@@ -6,7 +6,6 @@ import org.apache.derby.jdbc.EmbeddedDriver;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.lang.System.out;
@@ -80,8 +79,8 @@ public class Lab2Cmd {
 									}
 								}
 							}
-							case cmdSelectAllTeams -> out.println(sql.getTableViewString(MyQuery.selectFromTeam));
-							case cmdSelectAllPlayers -> out.println(sql.getTableViewString(MyQuery.selectFromPlayer));
+							case cmdSelectAllTeams -> out.println(sql.getTableViewString(MyQuery.SELECT_FROM_TEAM));
+							case cmdSelectAllPlayers -> out.println(sql.getTableViewString(MyQuery.SELECT_FROM_PLAYER));
 							case cmdSelectPlayersWhereTeam -> {
 								if (cmdArgs.length < 2) {
 									out.println("[Cmd Error]: 1 arg required");
@@ -89,11 +88,10 @@ public class Lab2Cmd {
 								}
 								// check team
 								var teamName = cmdArgs[1];
-								//if (lab2.sql.exists("Team", String.format("TeamName='%s'", teamName))) {
 								if (sql.exists("Team", "Name='%s'", teamName)) {
 									out.println(sql.getTableViewString(String.format(
-										MyQuery.selectFromPlayerWhereTeamId,
-										teamName)));
+										MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID,
+										String.format("(SELECT ID FROM Team WHERE Name='%s')", teamName))));
 								}
 								else out.println("[SQL Error]: this team does not exist");
 							}
@@ -107,7 +105,7 @@ public class Lab2Cmd {
 									out.println("[SQL Error]: team already exists");
 									continue;
 								}
-								sql.execute(MyQuery.insertIntoTeam, teamName);
+								sql.execute(MyQuery.INSERT_INTO_TEAM, teamName);
 							}
 							case cmdAddPlayer -> {
 								if (cmdArgs.length < 5) {
@@ -115,14 +113,14 @@ public class Lab2Cmd {
 									continue;
 								}
 								String pSrn = cmdArgs[1], pName = cmdArgs[2], pPtr = cmdArgs[3], teamName = cmdArgs[4];
-								var rs = sql.executeQuery(MyQuery.selectIdFromTeamWhereName, teamName);
+								var rs = sql.executeQuery(MyQuery.SELECT_ID_FROM_TEAM_WHERE_NAME, teamName);
 								int teamId;
 								// check team
 								if (rs.next()) {
 									teamId = rs.getInt(1);
 									// check player
-									if (!sql.exists(MyQuery.selectFromPlayerWhere, pSrn, pName, pPtr, teamId)) {
-										sql.execute(MyQuery.insertIntoPlayer, pSrn, pName, pPtr, teamId);
+									if (!sql.existsQuery(MyQuery.SELECT_FROM_PLAYER_WHERE, pSrn, pName, pPtr, teamId)) {
+										sql.execute(MyQuery.INSERT_INTO_PLAYER, pSrn, pName, pPtr, teamId);
 									}
 									else out.println("[SQL Error]: player already exists");
 								}
@@ -135,10 +133,10 @@ public class Lab2Cmd {
 								}
 								String teamName = cmdArgs[1];
 								// check team
-								if (sql.exists(MyQuery.selectIdFromTeamWhereName, teamName)) {
+								if (sql.existsQuery(MyQuery.SELECT_ID_FROM_TEAM_WHERE_NAME, teamName)) {
 									// check players
-									if (!sql.exists(MyQuery.selectFromPlayerWhereTeamId, teamName)) {
-										sql.execute(MyQuery.deleteFromTeamWhereName, teamName);
+									if (!sql.existsQuery(MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID, teamName)) {
+										sql.execute(MyQuery.DELETE_FROM_TEAM_WHERE_NAME, teamName);
 									}
 									else out.println("[SQL Error]: cannot delete team: some players link to it");
 								}
@@ -150,14 +148,14 @@ public class Lab2Cmd {
 									continue;
 								}
 								String pSrn = cmdArgs[1], pName = cmdArgs[2], pPtr = cmdArgs[3], teamName = cmdArgs[4];
-								var rs = sql.executeQuery(MyQuery.selectIdFromTeamWhereName, teamName);
+								var rs = sql.executeQuery(MyQuery.SELECT_ID_FROM_TEAM_WHERE_NAME, teamName);
 								int teamId;
 								// check team
 								if (rs.next()) {
 									teamId = rs.getInt(1);
 									// check player
-									if (sql.exists(MyQuery.selectFromPlayerWhere, pSrn, pName, pPtr, teamId)) {
-										sql.execute(MyQuery.deleteFromPlayerWhere, pSrn, pName, pPtr, teamId);
+									if (sql.existsQuery(MyQuery.SELECT_FROM_PLAYER_WHERE, pSrn, pName, pPtr, teamId)) {
+										sql.execute(MyQuery.DELETE_FROM_PLAYER_WHERE, pSrn, pName, pPtr, teamId);
 									}
 									else out.println("[SQL Error]: player does not exists");
 								}

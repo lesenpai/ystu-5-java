@@ -6,7 +6,7 @@ package lab1.p1;
 
 import static java.lang.System.out;
 
-public class Lab1 {
+public class Lab1Cmd {
 
 	public static void main(String[] args) {
 		out.println(prog1());

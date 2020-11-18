@@ -1,12 +1,5 @@
-import lab1.*;
-import lab2_old.Lab2;
-import lab2_old.ui.Lab2UI;
-
-import static java.lang.System.out;
-import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) throws Exception {
+    /*public static void main(String[] args) throws Exception {
         var DEBUG = false;
         if(DEBUG)
             Lab2UI.main(null);
@@ -23,7 +16,7 @@ public class Main {
                             Lab1.main(null);
                         }
                         case "2" -> {
-                            Lab1UI.main(null);
+                            Lab1UIMainWindow.main(null);
                         }
                         default -> {
                             out.println("bad input");
@@ -42,5 +35,5 @@ public class Main {
                 default -> out.println("no lab");
             }
         }
-    }
+    }*/
 }

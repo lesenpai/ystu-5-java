@@ -2,12 +2,14 @@ package lab2.sql;
 
 import lab2.p1.DBType;
 
+import javax.swing.table.DefaultTableModel;
+import java.sql.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Vector;
 
 import static java.lang.System.out;
 
@@ -18,7 +20,7 @@ public class SQL {
 
 	public SQL(DBType dbType, String db, String user, String password) throws SQLException {
 		this.dbType = dbType;
-		String url = "", dbSys = "";
+		String url = "";
 		switch (dbType) {
 			case MySQL -> url = String.format("jdbc:mysql://localhost:3306/%s?autoReconnect=true&useSSL=false", db);
 			case SQLServer -> url = String.format("jdbc:sqlserver://localhost;database=%s", db);
@@ -26,9 +28,13 @@ public class SQL {
 		}
 
 		con = DriverManager.getConnection(url, user, password);
-		out.println("[Connected to " + dbType.name() + "]");
-		//stmt = con.createStatement();
+		out.printf("[Connected to %s]\n", dbType.name());
 		stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+	}
+
+	public void close() throws SQLException {
+		con.close();
+		out.printf("[Disconnected from %s]", dbType.name());
 	}
 
 	public void runScript(Path path) throws IOException, SQLException {
@@ -45,12 +51,9 @@ public class SQL {
 			.reduce("", String::concat)
 			//.split(";(?!$)"); // split into queries
 			.split((dbType==DBType.Derby)?";":";(?!$)"); // derby's 'execute' dont like ';' at end
-		for (var q : script)
+		for (var q : script) {
 			execute(q);
-	}
-
-	public void close() throws SQLException {
-		con.close();
+		}
 	}
 
 	public void initDb() throws IOException, SQLException {
@@ -88,6 +91,30 @@ public class SQL {
 				}
 			}
 		}
+	}
+
+	public DefaultTableModel buildTableModel(String query) throws SQLException {
+		ResultSet rs = this.executeQuery(query);
+		ResultSetMetaData metaData = rs.getMetaData();
+
+		// names of columns
+		Vector<String> columnNames = new Vector<>();
+		int columnCount = metaData.getColumnCount();
+		for (int column = 1; column <= columnCount; column++) {
+			columnNames.add(metaData.getColumnName(column));
+		}
+
+		// data of the table
+		Vector<Vector<Object>> data = new Vector<>();
+		while (rs.next()) {
+			Vector<Object> vector = new Vector<>();
+			for (int columnIndex = 1; columnIndex <= columnCount; columnIndex++) {
+				vector.add(rs.getObject(columnIndex));
+			}
+			data.add(vector);
+		}
+
+		return new DefaultTableModel(data, columnNames);
 	}
 
 	public String getTableViewString(String query) throws SQLException {
@@ -144,12 +171,12 @@ public class SQL {
 		return stmt.executeQuery(String.format(query, Arrays.stream(args).toArray()));
 	}
 
-	/*public boolean exists(String table, String where, Object... args) throws SQLException {
+	public boolean exists(String table, String where, Object... args) throws SQLException {
 		var query = String.format("SELECT 1 FROM %s WHERE %s", table, String.format(where, Arrays.stream(args).toArray()));
 		return stmt.executeQuery(query).next();
-	}*/
+	}
 
-	public boolean exists(String query, Object... args) throws SQLException {
+	public boolean existsQuery(String query, Object... args) throws SQLException {
 		query = String.format(query, Arrays.stream(args).toArray());
 		return stmt.executeQuery(query).next();
 	}
