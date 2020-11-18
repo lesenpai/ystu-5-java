@@ -2,7 +2,7 @@
  * variant 7
  * */
 
-package lab1;
+package lab1.p1;
 
 import static java.lang.System.out;
 
@@ -49,19 +49,18 @@ public class Lab1 {
 		double xMin = 0, xMax = 2 * Math.PI;
 		double dx = Math.PI / 6, E = 1e-5;
 		sb.append(String.format("%5s %15s %n", "X", "Y"));
-		sb.append("-".repeat(40)).append("\n");
+		sb.append("-".repeat(25)).append("\n");
 		double T = 0, y = 0;
-		int n;
+		int k;
 
 		for (double x = xMin, i = 1; x <= xMax; x += dx, i++) {
 			T = 1;
 			y = 0;
-			n = 1;
+			k = 1;
 			while (Math.abs(T) > E) {
 				y += T;
-				T *= (4 * pow(-1, n + 2) * x * x)
-					/ (4 * n * n * pow(-1, n + 1) + 6 * n * pow(-1, n + 1) + 2 * pow(-1, n + 1));
-				n++;
+				T *= -(x * x) / (k * k + 1.5 * k + 0.5);
+				k++;
 			}
 			sb.append(String.format("%5s %15s %n", round(x, 2), round(y, 5)));
 		}
