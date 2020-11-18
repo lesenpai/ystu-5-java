@@ -11,7 +11,7 @@ import java.util.Scanner;
 import static java.lang.System.out;
 
 public class Lab2Cmd {
-	public static void main(String[] args) throws ClassNotFoundException, SQLException, InterruptedException {
+	public static void main(String[] args) throws Exception {
 		boolean isRunning = true;
 		final String cmdExit = "exit",
 			cmdBb = "bb",
@@ -89,9 +89,9 @@ public class Lab2Cmd {
 								// check team
 								var teamName = cmdArgs[1];
 								if (sql.exists("Team", "Name='%s'", teamName)) {
-									out.println(sql.getTableViewString(String.format(
-										MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID,
-										String.format("(SELECT ID FROM Team WHERE Name='%s')", teamName))));
+									out.println(sql.getTableViewString(
+										MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID.formatted(
+											MyQuery.SELECT_ID_FROM_TEAM_WHERE_NAME.formatted(teamName))));
 								}
 								else out.println("[SQL Error]: this team does not exist");
 							}

@@ -150,12 +150,9 @@ public class Lab2UIMainWindow extends JFrame {
 				case ACTION_SHOW_PLAYERS_WHERE_TEAM -> {
 					var teamName = tbox_Team_Name.getText();
 					if (sql.exists("Team", "Name='%s'", teamName)) {
-						//out.println(sql.getTableViewString(String.format(
-						//	MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID,
-						//	String.format("(SELECT ID FROM Team WHERE Name='%s')", teamName))));
-						table.setModel(sql.buildTableModel("%s=(%s)".formatted(
-							MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID,
-							MyQuery.SELECT_ID_FROM_TEAM_WHERE_NAME.formatted(teamName))));
+						table.setModel(sql.buildTableModel(
+							MyQuery.SELECT_FROM_PLAYER_WHERE_TEAMID.formatted(
+								MyQuery.SELECT_ID_FROM_TEAM_WHERE_NAME.formatted(teamName))));
 					}
 					else showErrorMessage("Такая команда не существует");
 				}

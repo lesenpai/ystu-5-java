@@ -1,6 +1,7 @@
 package lab2.sql;
 
 import lab2.p1.DBType;
+
 import javax.swing.table.DefaultTableModel;
 import java.sql.*;
 import java.io.IOException;
@@ -9,6 +10,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Vector;
+
 import static java.lang.System.out;
 
 public class SQL {
@@ -32,22 +34,21 @@ public class SQL {
 
 	public void close() throws SQLException {
 		con.close();
-		out.printf("[Disconnected from %s]", dbType.name());
+		out.printf("[Disconnected from %s]\n", dbType.name());
 	}
 
 	public void runScript(Path path) throws IOException, SQLException {
-		var sqlCommentSign = "";
-		switch (dbType) {
-			case MySQL -> sqlCommentSign = "#";
-			case SQLServer, Derby -> sqlCommentSign = "--";
-		}
-		String finalSqlCommentSign = sqlCommentSign;
-		String[] script = Arrays.stream(Arrays.stream(Files.readString(path)
-			.split("\n"))
-			.filter(s -> !s.startsWith(finalSqlCommentSign)) // remove commented lines
-			.toArray(String[]::new))
-			.reduce("", String::concat)
-			.split((dbType == DBType.Derby) ? ";" : ";(?!$)"); // derby's 'execute' dont like ';' at end
+		var sqlCommentSign = (dbType == DBType.MySQL) ? "#" : "--";
+
+		String[] script =
+			Arrays.stream(
+				Arrays.stream(
+					Files.readString(path).split("\n"))
+					.filter(s -> !s.startsWith(sqlCommentSign)) // remove commented lines
+					.toArray(String[]::new))
+				.reduce("", String::concat)
+				.split((dbType == DBType.Derby) ? ";" : ";(?!$)"); // derby's 'execute' dont like ';' at end
+
 		for (var q : script) {
 			execute(q);
 		}
