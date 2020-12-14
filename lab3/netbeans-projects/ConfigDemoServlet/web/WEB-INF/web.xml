@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>ConfigDemo</servlet-name>
+        <servlet-class>servlet.ConfigDemoServlet</servlet-class>
+        <init-param>
+            <param-name>Surname</param-name> 
+            <param-value>Gashkov</param-value>
+        </init-param> 
+        <init-param>
+            <param-name>Name</param-name> 
+            <param-value>Alex</param-value>
+        </init-param> 
+        <init-param>
+            <param-name>Patronymic</param-name> 
+            <param-value>Ivanovich</param-value>
+        </init-param> 
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfigDemo</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>

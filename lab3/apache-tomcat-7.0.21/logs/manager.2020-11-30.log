@@ -1,0 +1,66 @@
+Nov 30, 2020 2:48:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Nov 30, 2020 2:48:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Nov 30, 2020 2:48:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 2:48:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 2:48:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/DOCUME~1/Lev/LOCALS~1/Temp/context7723621618022282708.xml'
+Nov 30, 2020 2:48:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/P2_SimpleServlet'
+Nov 30, 2020 2:49:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 2:49:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:12:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:12:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Nov 30, 2020 3:12:33 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Nov 30, 2020 3:12:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:12:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:12:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Nov 30, 2020 3:12:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Nov 30, 2020 3:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:15:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:15:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Nov 30, 2020 3:15:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Nov 30, 2020 3:15:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Nov 30, 2020 3:15:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Nov 30, 2020 3:15:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:15:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:15:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Nov 30, 2020 3:15:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Nov 30, 2020 3:16:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:16:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Nov 30, 2020 3:16:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Nov 30, 2020 3:17:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:17:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Nov 30, 2020 3:17:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Nov 30, 2020 3:17:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'

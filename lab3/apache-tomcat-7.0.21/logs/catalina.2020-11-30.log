@@ -1,0 +1,124 @@
+Nov 30, 2020 2:37:36 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Nov 30, 2020 2:37:36 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Nov 30, 2020 2:37:36 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 2:37:36 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 2:37:36 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 768 ms
+Nov 30, 2020 2:37:36 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 30, 2020 2:37:36 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Nov 30, 2020 2:37:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:37:37 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Nov 30, 2020 2:37:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Nov 30, 2020 2:37:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Nov 30, 2020 2:37:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Nov 30, 2020 2:37:38 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 2:37:38 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 2:37:38 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1168 ms
+Nov 30, 2020 2:48:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 2:48:51 AM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/P2_SimpleServlet]] after start() had already been called. The second call will be ignored.
+Nov 30, 2020 3:12:39 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/ConfigDemoServlet]
+Nov 30, 2020 3:12:40 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/servlet/ConfigDemoServlet]
+Nov 30, 2020 3:15:40 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/ConfigDemoServlet]
+Nov 30, 2020 3:15:41 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 3:15:41 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/servlet/ConfigDemoServlet]
+Nov 30, 2020 3:15:42 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 3:15:43 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 30, 2020 3:15:43 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 3:15:43 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 3:15:43 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 3:15:43 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 3:15:47 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Nov 30, 2020 3:15:47 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Nov 30, 2020 3:15:47 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 3:15:47 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 3:15:47 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 749 ms
+Nov 30, 2020 3:15:48 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 30, 2020 3:15:48 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Nov 30, 2020 3:15:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Nov 30, 2020 3:15:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Nov 30, 2020 3:15:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Nov 30, 2020 3:15:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Nov 30, 2020 3:15:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Nov 30, 2020 3:15:49 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Nov 30, 2020 3:15:49 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Nov 30, 2020 3:15:49 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1277 ms
+Nov 30, 2020 3:16:59 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/ConfigDemoServlet]
+Nov 30, 2020 3:17:00 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/servlet/ConfigDemoServlet]

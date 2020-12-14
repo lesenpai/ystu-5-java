@@ -1,0 +1,14 @@
+Dec 02, 2020 8:45:07 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 02, 2020 8:45:08 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 02, 2020 8:45:09 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 02, 2020 8:45:09 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 02, 2020 8:45:09 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 02, 2020 8:45:09 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 02, 2020 8:45:09 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]

@@ -1,0 +1,32 @@
+Dec 08, 2020 2:12:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Dec 08, 2020 2:12:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Dec 08, 2020 2:12:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 08, 2020 2:12:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 08, 2020 2:12:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Dec 08, 2020 2:12:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Dec 08, 2020 2:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Dec 08, 2020 2:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Dec 08, 2020 2:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 08, 2020 2:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 08, 2020 2:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Dec 08, 2020 2:12:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'
+Dec 08, 2020 2:13:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 08, 2020 2:13:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Dec 08, 2020 2:13:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/ConfigDemoServlet'
+Dec 08, 2020 2:13:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/ConfigDemoServlet'

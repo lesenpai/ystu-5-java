@@ -1,0 +1,2054 @@
+Dec 01, 2020 2:24:29 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/myApp]
+Dec 01, 2020 2:25:40 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/myApp]
+Dec 01, 2020 2:25:53 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:25:53 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:25:54 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:25:54 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 2:25:54 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 2:25:55 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-apr-9999"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 2:25:55 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 2:25:55 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 2:25:55 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 705 ms
+Dec 01, 2020 2:25:55 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 2:25:55 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:25:55 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:25:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:56 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 2:25:56 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1151 ms
+Dec 01, 2020 2:27:17 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:27:17 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:27:17 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:27:17 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:27:17 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:27:17 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:27:19 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 2:27:19 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 2:27:19 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:27:19 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:27:19 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 611 ms
+Dec 01, 2020 2:27:19 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 2:27:19 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 2:27:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 2:27:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 2:27:20 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:27:21 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:27:21 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1081 ms
+Dec 01, 2020 2:30:11 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/myApp] has started
+Dec 01, 2020 2:30:11 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/myApp] is completed
+Dec 01, 2020 2:31:17 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:31:17 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:31:18 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:31:19 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 2:31:19 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 2:31:19 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:31:19 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:31:19 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:31:19 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:31:19 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:31:19 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:31:19 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:31:19 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 715 ms
+Dec 01, 2020 2:31:19 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 2:31:19 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 2:31:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:20 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 2:31:20 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:31:20 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:31:20 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1349 ms
+Dec 01, 2020 2:33:14 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:33:14 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:15 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 2:33:16 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:16 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-apr-9999"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 2:33:16 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:16 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 2:33:16 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 688 ms
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 2:33:16 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:16 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:33:17 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:17 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:17 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:17 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:17 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 2:33:17 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1243 ms
+Dec 01, 2020 2:33:34 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:33:34 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:34 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:34 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:33:34 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:34 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:35 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 2:33:35 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 2:33:36 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:36 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 632 ms
+Dec 01, 2020 2:33:36 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 2:33:36 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 2:33:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 2:33:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 2:33:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 2:33:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 2:33:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 2:33:37 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:33:37 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:33:37 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1090 ms
+Dec 01, 2020 2:46:47 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/LifeCycleDemoServlet] has started
+Dec 01, 2020 2:46:48 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/LifeCycleDemoServlet] is completed
+Dec 01, 2020 2:49:38 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/LifeCycleDemoServlet]
+Dec 01, 2020 2:49:56 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:49:56 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:49:57 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:49:58 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:49:58 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:49:58 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:49:58 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:49:58 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:50:00 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 2:50:00 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 2:50:00 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:50:00 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:50:00 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 733 ms
+Dec 01, 2020 2:50:00 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 2:50:00 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 2:50:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 2:50:01 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:50:01 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:50:01 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1203 ms
+Dec 01, 2020 2:50:03 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/LifeCycleDemoServlet]
+Dec 01, 2020 2:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 2:50:03 AM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/LifeCycleDemoServlet]] after start() had already been called. The second call will be ignored.
+Dec 01, 2020 2:54:50 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 2:54:50 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:54:51 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:54:52 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 2:54:52 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:54:52 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 2:54:52 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 2:54:52 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:02:26 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 3:02:26 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 3:02:26 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:02:26 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:02:26 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 702 ms
+Dec 01, 2020 3:02:27 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 3:02:27 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 3:02:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 3:02:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 3:02:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 3:02:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 3:02:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 3:02:28 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:02:28 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:02:28 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1266 ms
+Dec 01, 2020 3:05:08 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/ConfigDemoServlet]
+Dec 01, 2020 3:05:08 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/servlet/ConfigDemoServlet]
+Dec 01, 2020 3:05:11 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 3:05:11 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:05:12 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:05:13 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 3:05:13 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:05:13 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:05:13 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:05:13 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:05:18 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 3:05:18 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 3:05:19 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:05:19 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 770 ms
+Dec 01, 2020 3:05:19 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 3:05:19 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:19 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 3:05:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 3:05:20 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:05:20 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:05:20 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1376 ms
+Dec 01, 2020 3:05:30 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/ConfigDemoServlet]
+Dec 01, 2020 3:05:30 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/servlet/ConfigDemoServlet]
+Dec 01, 2020 3:08:53 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/ContextDemoServlet] has started
+Dec 01, 2020 3:08:53 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/ContextDemoServlet] is completed
+Dec 01, 2020 3:29:32 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 3:29:32 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:29:33 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:29:34 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 3:29:35 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:29:35 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:29:35 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:29:35 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:29:36 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 3:29:36 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 3:29:37 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:29:37 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 654 ms
+Dec 01, 2020 3:29:37 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 3:29:37 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:37 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 3:29:37 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 3:29:38 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:29:38 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:29:38 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1117 ms
+Dec 01, 2020 3:33:18 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/myApp]
+Dec 01, 2020 3:33:59 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 3:33:59 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:34:00 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:34:01 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 3:34:01 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:34:01 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:34:01 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:34:01 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:34:03 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 3:34:03 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 3:34:04 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:34:04 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 671 ms
+Dec 01, 2020 3:34:04 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 3:34:04 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:04 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 3:34:04 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 3:34:05 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:34:05 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:34:05 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1114 ms
+Dec 01, 2020 3:34:25 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/myApp]
+Dec 01, 2020 3:39:05 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 3:39:05 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:39:06 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:39:07 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 3:39:08 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:39:08 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:39:08 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:39:08 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:39:21 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 3:39:21 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 3:39:21 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:39:21 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:39:21 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 712 ms
+Dec 01, 2020 3:39:21 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 3:39:21 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 3:39:21 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 3:39:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 3:39:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 3:39:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 3:39:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 3:39:23 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1199 ms
+Dec 01, 2020 4:29:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 4:29:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 4:29:02 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:29:02 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-apr-9999"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 4:29:02 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 4:29:02 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:29:02 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 4:29:02 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 4:29:02 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 670 ms
+Dec 01, 2020 4:29:02 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 4:29:02 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 4:29:02 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 4:29:03 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1104 ms
+Dec 01, 2020 4:29:03 AM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Native Method)
+	at java.net.TwoStacksPlainSocketImpl.socketBind(TwoStacksPlainSocketImpl.java:137)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.TwoStacksPlainSocketImpl.bind(TwoStacksPlainSocketImpl.java:110)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:709)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+
+Dec 01, 2020 4:29:03 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:29:03 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:29:03 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 4:29:03 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:29:03 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:50:00 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 4:50:00 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:50:01 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:50:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 4:50:02 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 4:50:02 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 4:50:02 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:50:02 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:50:02 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:50:02 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:50:02 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:50:02 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:50:02 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 835 ms
+Dec 01, 2020 4:50:02 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 4:50:02 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 4:50:02 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 4:50:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 4:50:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 4:50:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 4:50:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 4:50:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 4:50:04 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:50:04 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:50:04 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1310 ms
+Dec 01, 2020 4:53:02 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 4:53:02 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:53:03 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:53:04 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 4:53:04 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:53:04 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:53:04 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:53:04 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:53:09 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 4:53:09 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 4:53:10 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:53:10 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 687 ms
+Dec 01, 2020 4:53:10 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 4:53:10 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:10 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 4:53:11 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 4:53:11 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 4:53:11 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1181 ms
+Dec 01, 2020 5:06:15 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:06:16 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:06:17 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:06:17 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:06:17 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:06:17 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:06:17 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:06:22 AM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:457)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:371)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:452)
+
+Dec 01, 2020 5:06:34 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:06:34 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:06:34 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:06:34 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:06:34 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 687 ms
+Dec 01, 2020 5:06:34 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:06:34 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:06:34 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:06:35 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:06:35 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:06:35 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1180 ms
+Dec 01, 2020 5:37:17 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:37:17 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:37:18 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:37:18 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-apr-9999"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 5:37:18 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 5:37:18 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:37:18 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 5:37:18 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 672 ms
+Dec 01, 2020 5:37:18 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:37:18 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:18 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:37:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:37:19 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1085 ms
+Dec 01, 2020 5:37:19 AM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Native Method)
+	at java.net.TwoStacksPlainSocketImpl.socketBind(TwoStacksPlainSocketImpl.java:137)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.TwoStacksPlainSocketImpl.bind(TwoStacksPlainSocketImpl.java:110)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:422)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:709)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+
+Dec 01, 2020 5:37:19 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:37:19 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:37:19 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:37:19 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:37:19 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:38:09 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 5:38:09 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:38:10 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:38:11 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:38:11 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:38:11 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:38:12 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:38:12 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:38:12 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:38:12 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:38:12 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:38:12 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:38:12 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 733 ms
+Dec 01, 2020 5:38:12 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:38:12 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:38:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:12 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:13 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:38:13 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:38:13 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:38:13 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1370 ms
+Dec 01, 2020 5:41:28 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 5:41:28 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:29 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:29 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:41:29 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:41:30 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:30 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-apr-9999"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 5:41:30 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 5:41:30 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:30 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 5:41:30 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 625 ms
+Dec 01, 2020 5:41:30 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:41:30 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:41:30 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:41:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:41:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:41:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:41:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:41:31 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1565 ms
+Dec 01, 2020 5:41:31 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:31 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:31 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:31 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:44 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:44 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:44 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:41:44 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:44 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:48 AM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:457)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:371)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:452)
+
+Dec 01, 2020 5:41:49 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:41:49 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:41:50 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:50 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:50 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 645 ms
+Dec 01, 2020 5:41:50 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:41:50 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:41:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:51 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:41:51 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:41:51 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:41:51 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1135 ms
+Dec 01, 2020 5:43:01 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/myApp] has started
+Dec 01, 2020 5:43:02 AM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/myApp] is completed
+Dec 01, 2020 5:43:07 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 5:43:07 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:08 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:08 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:43:08 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-apr-9999"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 5:43:09 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-apr-8009"]
+java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+
+Dec 01, 2020 5:43:09 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:781)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:573)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:596)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:911)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.lang.Exception: Socket bind failed: [730048] Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+	at org.apache.tomcat.util.net.AprEndpoint.bind(AprEndpoint.java:409)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:492)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:369)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:909)
+	... 13 more
+
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 698 ms
+Dec 01, 2020 5:43:09 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:43:09 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:09 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:09 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:09 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:09 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:43:10 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1418 ms
+Dec 01, 2020 5:43:47 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 5:43:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:47 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:43:47 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:47 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:49 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:43:49 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:43:49 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:49 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:49 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 661 ms
+Dec 01, 2020 5:43:49 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:43:49 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:43:49 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:43:50 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:43:50 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:43:50 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1055 ms
+Dec 01, 2020 5:45:31 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/myApp]
+Dec 01, 2020 5:45:41 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/myApp]
+Dec 01, 2020 5:45:46 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dec 01, 2020 5:45:46 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:45:47 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:45:48 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Dec 01, 2020 5:45:48 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:45:48 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:45:48 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:45:48 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:45:49 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.22.
+Dec 01, 2020 5:45:49 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [false], sendfile [true], accept filters [false], random [true].
+Dec 01, 2020 5:45:50 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:45:50 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 620 ms
+Dec 01, 2020 5:45:50 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Dec 01, 2020 5:45:50 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.21
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ContextDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor LifeCycleDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor P2_SimpleServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor RequestDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor servlet#ConfigDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [servlet/ConfigDemoServlet] does not meet these criteria and has been changed to [/servlet/ConfigDemoServlet] 
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ShareDemoServlet.xml from C:\apache-tomcat-7.0.21\conf\Catalina\localhost
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 01, 2020 5:45:50 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 01, 2020 5:45:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 01, 2020 5:45:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 01, 2020 5:45:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory myApp
+Dec 01, 2020 5:45:51 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 01, 2020 5:45:51 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-apr-9999"]
+Dec 01, 2020 5:45:51 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-apr-8009"]
+Dec 01, 2020 5:45:51 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1452 ms
