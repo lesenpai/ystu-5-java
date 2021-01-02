@@ -19,7 +19,8 @@ public class Lab2Test {
 				}
 				catch (SQLException e) {
 					out.println("[Connection ERROR]");
-					out.println(e.getMessage());
+					//out.println(e.getMessage());
+					e.printStackTrace();
 					continue;
 				}
 				// go
@@ -31,7 +32,8 @@ public class Lab2Test {
 				}
 				catch (SQLException e) {
 					out.println("[SQL ERROR]");
-					out.println(e.getMessage());
+					//out.println(e.getMessage());
+					e.printStackTrace();
 				}
 			}
 		}

@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Tue Nov 24 18:07:17 MSK 2020:
- Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.15.1.3 - (1853019): экземпляр a816c00e-0175-facb-6e59-00000ed7b3d8
-в каталоге базы данных D:\repos\db\derby\football jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee 
-
+Fri Dec 18 21:44:44 MSK 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0176-772b-2159-00000ebda130 
+on database directory D:\repos\db\derby\test with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee 
+Loaded from file:/D:/lib/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=15+36-1562
-user.dir=D:\repos\YSTU\cur\Java\App
+user.dir=D:\repos\YSTU\cur\Java\java\lab1-2
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
 derby.system.home=null
-Запущен загрузчик классов базы данных - derby.database.classpath=''
+Database Class Loader started - derby.database.classpath=''
