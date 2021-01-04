@@ -1,0 +1,20 @@
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD
+  Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+<web-app>
+  <servlet>
+    <servlet-name>LoginServSeans6</servlet-name>
+    <servlet-class>LoginServSeans6</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>ContentServlet3</servlet-name>
+    <servlet-class>ContentServlet3</servlet-class>
+  </servlet>
+<servlet-mapping>
+    <servlet-name>LoginServSeans6</servlet-name>
+    <url-pattern>/LoginServSeans6</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ContentServlet3</servlet-name>
+    <url-pattern>/ContentServlet3</url-pattern>
+  </servlet-mapping>
+ </web-app>

@@ -1,0 +1,20 @@
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD
+  Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+<web-app>
+  <servlet>
+    <servlet-name>LoginServlet2</servlet-name>
+    <servlet-class>LoginServlet2</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>WelcomeServlet6</servlet-name>
+    <servlet-class>WelcomeServlet6</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>LoginServlet2</servlet-name>
+    <url-pattern>/LoginServlet2</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>WelcomeServlet6</servlet-name>
+    <url-pattern>/WelcomeServlet6</url-pattern>
+  </servlet-mapping>
+   </web-app>

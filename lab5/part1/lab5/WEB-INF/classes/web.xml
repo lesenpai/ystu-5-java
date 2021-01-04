@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD
+  Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+<web-app>
+  <servlet>
+    <servlet-name>WelcomeServlet4</servlet-name>
+    <servlet-class>WelcomeServlet4</servlet-class>
+
+    <servlet-name>WelcomeServlet5</servlet-name>
+    <servlet-class>WelcomeServlet5</servlet-class>
+
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>RegisterServlet</servlet-class>
+
+    <servlet-name>RegisterServlet2</servlet-name>
+    <servlet-class>RegisterServlet2</servlet-class>
+
+    <servlet-name>RegisterServlet3</servlet-name>
+    <servlet-class>RegisterServlet3</servlet-class>
+
+    <servlet-name>PathInfoDemoServlet</servlet-name>
+    <servlet-class>PathInfoDemoServlet</servlet-class>
+
+    <servlet-name>HttpRequestDemoServlet</servlet-name>
+    <servlet-class>HttpRequestDemoServlet</servlet-class>
+
+
+
+  </servlet>
+
+    <servlet-mapping>
+    <servlet-name>WelcomeServlet4</servlet-name>
+    <url-pattern>/WelcomeServlet4</url-pattern>
+
+
+    <servlet-name>WelcomeServlet5</servlet-name>
+    <url-pattern>/WelcomeServlet5</url-pattern>
+
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+
+    <servlet-name>RegisterServlet2</servlet-name>
+    <url-pattern>/*</url-pattern>
+
+    <servlet-name>RegisterServlet3</servlet-name>
+    <url-pattern>/RegisterServlet3</url-pattern>
+
+    <servlet-name>PathInfoDemoServlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+
+    <servlet-name>HttpRequestDemoServlet</servlet-name>
+    <url-pattern>/HttpRequestDemoServlet</url-pattern>
+
+
+
+
+  </servlet-mapping>
+  </web-app>
